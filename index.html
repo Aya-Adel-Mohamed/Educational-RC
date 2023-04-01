@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Educational RC</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- loading -->
+    <div class="loading"></div>
+    <!-- end loading -->
+  <div id="content" >
+    <div class="d-flex justify-content-center">
+        <div class="page-width" id="page">
+            <div class="page-content bg-white">
+               <div class="container-fluid gx-0">
+                <!-- header start -->
+                <div class="page-header d-flex justify-content-center align-items-center">
+                    <div class="w-82">
+                        <h1 class="title">What’s in the basket? Choose and write.</h1>
+                    </div>
+                    <div class="w-18 header-button text-center">
+                        <div class="resource-button mx-2 mx-xl-3 d-inline-block" id="resourseBtn">
+                            <img src="assets/images/resourse_icon.png" alt="resourse_icon" class="w-100">
+                        </div>
+                        <div class="help-button d-inline-block" id="helpBtn">
+                            <img src="assets/images/help_icon.png" alt="help_icon" class="w-100">
+                        </div>
+                    </div>
+                </div>
+                <!-- header end -->
+                <!-- page start -->
+                <section class="page-section">
+                    <div class="page-bg"></div>
+                    <div class="page-footer-bg"></div>
+                    <div class="item-container">
+                       <div class="item px-4">
+                        <div class="question-container text-center">
+                            <span class="question fw-bold">scissors</span>
+                            <span class="question fw-bold">eraser</span>
+                            <span class="question fw-bold">ruler</span>
+                            <span class="question fw-bold">bag</span>
+                            <br/>
+                            <span class="question fw-bold">pencil case</span>
+                            <span class="question fw-bold">pencil</span>
+                            <span class="question fw-bold">book</span>
+                            <span class="question fw-bold">pen</span>
+                        </div>
+                       </div>
+                        <div class="write-container position-relative">
+                            <img src="assets/images/p15e11.png" alt="page_image">
+                            <div class="write-option col-12">
+                               <div class="row gx-xl-5">
+                                <div class="option-col col-4">
+                                    <div class="option option-1" id="mark">&nbsp;</div>
+                                    <div class="option option-2 ">&nbsp;</div>
+                                </div>
+                                <div class="option-col col-4">
+                                    <div class="option option-3">&nbsp;</div>	
+                                </div>
+                                <div class="option-col col-4">
+                                    <div class="option option-4">&nbsp;</div>
+                                    <div class="option option-5">&nbsp;</div>	
+                                </div>
+                               </div>
+                            </div>
+                            <audio id="audioCorrect" src=""></audio>
+                        </div>
+                    </div>
+                </section>
+                <!-- page end -->
+                <!-- footer start -->
+                <footer class="page-footer">
+                    <div class="container-fluid gx-0">
+                        <div class="replay-show-box d-flex align-items-center">
+                                <div class="col-7">
+                                    <div class="replay-btn">
+                                        <img src="assets/images/replay_icon.png" alt="replay_icon" class="w-100" id="replayBtn">
+                                    </div>
+                                </div>
+                                <div class="col-5 ps-2">
+                                    <div class="show-btn">
+                                        <img src="assets/images/showAns_icon.png" alt="showAns_icon" class='w-100' id="showBtn">
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </footer>
+                <!-- footer end -->
+                <!-- Help Popup start-->
+                <div id="helpBoxContainer" class="d-none align-items-center justify-content-center">
+                    <div id="helpBox">
+                        <img src="assets/images/close_icon.png" alt="close_icon" class="close-btn position-absolute top-0 end-0" id="closeHelpBtn">
+                        <div class="help-content">
+                            <p class="text-left">Help content goes here.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Help Popup end -->
+                <!-- Resourse Popup start -->
+                <div id="resourseBoxContainer" class="d-none align-items-center justify-content-center">
+                    <div id="resourseBox">
+                        <img src="assets/images/close_icon.png" alt="close_icon" class="close-btn position-absolute top-0 end-0" id="closeResourseBtn">
+                        <div class="resourse-content">
+                            <img src="assets/images/dummy.jpg" alt="dummy_image">
+                        </div>
+                    </div>
+                </div>
+                <!-- Resourse Popup end -->
+               </div>
+            </div>
+        </div>
+    </div>
+  </div>
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
